@@ -45,7 +45,7 @@ class ConversationalChainTest {
         // given
         ChatMemory chatMemory = spy(MessageWindowChatMemory.withMaxMessages(10));
 
-        String aiMessage = "Hi there";
+        String aiMessage = "Hi there!";
         ChatModelMock model = ChatModelMock.thatAlwaysResponds(aiMessage);
 
         ConversationalChain chain = ConversationalChain.builder()
